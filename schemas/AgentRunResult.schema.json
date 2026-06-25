@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AgentRunResult.schema.json",
+  "title": "AgentRunResult",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "agentName": { "type": "string" },
+    "groupName": { "type": "string" },
+    "stance": { "type": "string" },
+    "findings": { "type": "array", "items": { "$ref": "AgentFinding.schema.json" } },
+    "risks": { "type": "array", "items": { "type": "string" } },
+    "recommendations": { "type": "array", "items": { "type": "string" } },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "withAgent": { "type": ["string", "null"] },
+          "topic": { "type": "string" },
+          "description": { "type": "string" },
+          "severity": { "type": "string", "enum": ["low", "medium", "high", "critical"] }
+        },
+        "required": ["topic", "description", "severity"]
+      }
+    },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "requiresHumanReview": { "type": "boolean" }
+  },
+  "required": ["agentName", "groupName", "stance", "findings", "risks", "recommendations", "conflicts", "confidence", "requiresHumanReview"]
+}

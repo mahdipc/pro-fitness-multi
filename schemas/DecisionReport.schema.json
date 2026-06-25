@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "DecisionReport.schema.json",
+  "title": "DecisionReport",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "language": { "type": "string", "const": "fa" },
+    "extractedProfileSummaryFa": { "type": "string" },
+    "missingDataFa": { "type": "array", "items": { "type": "string" } },
+    "assumptionsFa": { "type": "array", "items": { "type": "string" } },
+    "riskAssessmentFa": { "type": "array", "items": { "type": "string" } },
+    "agentConflictsFa": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "topicFa": { "type": "string" },
+          "agentsFa": { "type": "string" },
+          "conflictFa": { "type": "string" },
+          "finalDecisionFa": { "type": "string" },
+          "reasonFa": { "type": "string" }
+        },
+        "required": ["topicFa", "agentsFa", "conflictFa", "finalDecisionFa", "reasonFa"]
+      }
+    },
+    "programRationaleFa": { "type": "array", "items": { "type": "string" } },
+    "exerciseRationaleFa": { "type": "array", "items": { "type": "string" } },
+    "progressionRationaleFa": { "type": "array", "items": { "type": "string" } },
+    "whatWouldChangeFa": { "type": "array", "items": { "type": "string" } },
+    "validationSummaryFa": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": ["language", "extractedProfileSummaryFa", "missingDataFa", "assumptionsFa", "riskAssessmentFa", "agentConflictsFa", "programRationaleFa", "exerciseRationaleFa", "progressionRationaleFa", "whatWouldChangeFa", "validationSummaryFa"]
+}

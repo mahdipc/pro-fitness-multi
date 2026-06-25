@@ -1,0 +1,47 @@
+[
+  {
+    "id": "machine_chest_press",
+    "nameFa": "پرس سینه دستگاه",
+    "nameEn": "Machine Chest Press",
+    "movementPattern": "horizontal_push",
+    "primaryMuscles": ["chest"],
+    "secondaryMuscles": ["triceps", "front_delts"],
+    "equipment": ["machine"],
+    "difficulty": "beginner",
+    "riskFlags": ["shoulder_pain"],
+    "contraindications": ["acute_shoulder_pain"],
+    "alternatives": ["push_up", "dumbbell_floor_press"],
+    "instructionsFa": "دسته‌ها را کنترل‌شده به جلو فشار بده و آرنج‌ها را کاملاً قفل نکن.",
+    "commonMistakesFa": ["بالا آوردن شانه‌ها", "قفل‌کردن شدید آرنج", "حرکت خیلی سریع"]
+  },
+  {
+    "id": "leg_press",
+    "nameFa": "پرس پا دستگاه",
+    "nameEn": "Leg Press",
+    "movementPattern": "squat",
+    "primaryMuscles": ["quads", "glutes"],
+    "secondaryMuscles": ["hamstrings"],
+    "equipment": ["machine"],
+    "difficulty": "beginner",
+    "riskFlags": ["knee_pain", "lower_back_pain"],
+    "contraindications": ["acute_knee_pain", "acute_lower_back_pain"],
+    "alternatives": ["goblet_squat", "box_squat"],
+    "instructionsFa": "پاها را به اندازه عرض شانه بگذار، کمر را به پشتی بچسبان و دامنه را کنترل کن.",
+    "commonMistakesFa": ["جمع شدن زانو به داخل", "برداشتن کمر از پشتی", "قفل کردن زانو"]
+  },
+  {
+    "id": "lat_pulldown",
+    "nameFa": "لت پول‌داون",
+    "nameEn": "Lat Pulldown",
+    "movementPattern": "vertical_pull",
+    "primaryMuscles": ["lats"],
+    "secondaryMuscles": ["biceps", "rear_delts"],
+    "equipment": ["cable", "machine"],
+    "difficulty": "beginner",
+    "riskFlags": ["shoulder_pain"],
+    "contraindications": ["acute_shoulder_pain"],
+    "alternatives": ["assisted_pull_up", "seated_cable_row"],
+    "instructionsFa": "میله را به سمت بالای سینه بکش و شانه‌ها را پایین نگه دار.",
+    "commonMistakesFa": ["کشیدن پشت گردن", "تاب دادن بدن", "بالا بردن شانه‌ها"]
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "WorkoutPlan.schema.json",
+  "title": "WorkoutPlan",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "language": { "type": "string", "const": "fa" },
+    "goal": { "type": "string" },
+    "durationWeeks": { "type": "integer", "minimum": 1, "maximum": 52 },
+    "daysPerWeek": { "type": "integer", "minimum": 1, "maximum": 7 },
+    "planType": { "type": "string" },
+    "summary": { "type": "string" },
+    "weeklySchedule": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "dayLabelFa": { "type": "string" },
+          "titleFa": { "type": "string" },
+          "focusFa": { "type": "string" }
+        },
+        "required": ["dayLabelFa", "titleFa", "focusFa"]
+      }
+    },
+    "workoutDays": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "titleFa": { "type": "string" },
+          "warmupFa": { "type": "array", "items": { "type": "string" } },
+          "exercises": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "nameFa": { "type": "string" },
+                "nameEn": { "type": ["string", "null"] },
+                "targetMusclesFa": { "type": "array", "items": { "type": "string" } },
+                "sets": { "type": ["integer", "null"], "minimum": 1, "maximum": 10 },
+                "repsFa": { "type": ["string", "null"] },
+                "durationFa": { "type": ["string", "null"] },
+                "restSeconds": { "type": ["integer", "null"], "minimum": 0, "maximum": 600 },
+                "intensityFa": { "type": "string" },
+                "alternativeFa": { "type": "string" },
+                "notesFa": { "type": ["string", "null"] }
+              },
+              "required": ["nameFa", "targetMusclesFa", "sets", "repsFa", "durationFa", "restSeconds", "intensityFa", "alternativeFa"]
+            }
+          },
+          "cardioFa": { "type": ["string", "null"] },
+          "cooldownFa": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["titleFa", "warmupFa", "exercises", "cardioFa", "cooldownFa"]
+      }
+    },
+    "progressionRulesFa": { "type": "array", "items": { "type": "string" } },
+    "nutritionGuidanceFa": { "type": "array", "items": { "type": "string" } },
+    "safetyNotesFa": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": ["language", "goal", "durationWeeks", "daysPerWeek", "planType", "summary", "weeklySchedule", "workoutDays", "progressionRulesFa", "nutritionGuidanceFa", "safetyNotesFa"]
+}
