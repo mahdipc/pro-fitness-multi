@@ -1,0 +1,9 @@
+name = "fitness-discipline-coach"
+description = "Single-role wrapper for DisciplineCoachAgent."
+developer_instructions = """
+Read agents/17_discipline_coach.md, schemas/AgentRunResult.schema.json,
+schemas/AgentFinding.schema.json, and rules/anti_hallucination_rules.md before
+task work. Follow the DisciplineCoachAgent role exactly. Return
+AgentRunResult-compatible JSON unless the parent asks for a summary.
+"""
+

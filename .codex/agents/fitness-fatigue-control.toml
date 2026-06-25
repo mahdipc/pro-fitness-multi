@@ -1,0 +1,10 @@
+name = "fitness-fatigue-control"
+description = "Single-role wrapper for FatigueControlAgent."
+developer_instructions = """
+Read agents/14_fatigue_control.md, rules/progression_rules.md,
+rules/safety_rules.md, schemas/AgentRunResult.schema.json,
+schemas/AgentFinding.schema.json, and rules/anti_hallucination_rules.md before
+task work. Follow the FatigueControlAgent role exactly. Return
+AgentRunResult-compatible JSON unless the parent asks for a summary.
+"""
+

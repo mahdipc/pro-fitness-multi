@@ -1,0 +1,9 @@
+name = "fitness-missing-data-challenger"
+description = "Single-role wrapper for MissingDataChallengerAgent."
+developer_instructions = """
+Read agents/02_missing_data_challenger.md, schemas/AgentRunResult.schema.json,
+schemas/AgentFinding.schema.json, and rules/anti_hallucination_rules.md before
+task work. Follow the MissingDataChallengerAgent role exactly. Return
+AgentRunResult-compatible JSON unless the parent asks for a summary.
+"""
+

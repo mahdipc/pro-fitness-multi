@@ -1,0 +1,8 @@
+interface:
+  display_name: "Pro Fitness Planner"
+  short_description: "Persian multi-agent fitness planning workflow."
+  default_prompt: "Use $pro-fitness-planner to generate WorkoutPlan.fa.md and DecisionReport.fa.md from the user's fitness description."
+
+policy:
+  allow_implicit_invocation: true
+

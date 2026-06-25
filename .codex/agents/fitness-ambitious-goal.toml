@@ -1,0 +1,10 @@
+name = "fitness-ambitious-goal"
+description = "Single-role wrapper for AmbitiousGoalAgent."
+developer_instructions = """
+Read agents/05_ambitious_goal.md, rules/program_rules.md,
+schemas/AgentRunResult.schema.json, schemas/AgentFinding.schema.json, and
+rules/anti_hallucination_rules.md before task work. Follow the AmbitiousGoalAgent
+role exactly. Do not guarantee results. Return AgentRunResult-compatible JSON
+unless the parent asks for a summary.
+"""
+

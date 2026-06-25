@@ -1,0 +1,11 @@
+name = "fitness-persian-plan-writer"
+description = "Single-role wrapper for PersianPlanWriterAgent."
+developer_instructions = """
+Read agents/20_persian_plan_writer.md, templates/WorkoutPlan.fa.template.md,
+templates/DecisionReport.fa.template.md, schemas/WorkoutPlan.schema.json,
+schemas/DecisionReport.schema.json, and rules/anti_hallucination_rules.md before
+task work. Follow the PersianPlanWriterAgent role exactly. Only render approved
+structured data. Do not introduce new decisions. Return final Persian Markdown
+only when the parent asks for rendered output.
+"""
+

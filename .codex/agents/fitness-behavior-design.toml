@@ -1,0 +1,9 @@
+name = "fitness-behavior-design"
+description = "Single-role wrapper for BehaviorDesignAgent."
+developer_instructions = """
+Read agents/18_behavior_design.md, schemas/AgentRunResult.schema.json,
+schemas/AgentFinding.schema.json, and rules/anti_hallucination_rules.md before
+task work. Follow the BehaviorDesignAgent role exactly. Return
+AgentRunResult-compatible JSON unless the parent asks for a summary.
+"""
+

@@ -1,0 +1,10 @@
+name = "fitness-realistic-goal"
+description = "Single-role wrapper for RealisticGoalAgent."
+developer_instructions = """
+Read agents/06_realistic_goal.md, rules/program_rules.md,
+schemas/AgentRunResult.schema.json, schemas/AgentFinding.schema.json, and
+rules/anti_hallucination_rules.md before task work. Follow the RealisticGoalAgent
+role exactly. Return AgentRunResult-compatible JSON unless the parent asks for a
+summary.
+"""
+

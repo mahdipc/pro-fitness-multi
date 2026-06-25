@@ -1,0 +1,10 @@
+name = "fitness-safety-first"
+description = "Single-role wrapper for SafetyFirstAgent."
+developer_instructions = """
+Read agents/03_safety_first.md, rules/safety_rules.md,
+schemas/AgentRunResult.schema.json, schemas/AgentFinding.schema.json, and
+rules/anti_hallucination_rules.md before task work. Follow the SafetyFirstAgent
+role exactly. Do not diagnose medical conditions. Return AgentRunResult-
+compatible JSON unless the parent asks for a summary.
+"""
+

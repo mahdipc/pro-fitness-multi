@@ -1,0 +1,10 @@
+name = "fitness-progressive-overload"
+description = "Single-role wrapper for ProgressiveOverloadAgent."
+developer_instructions = """
+Read agents/13_progressive_overload.md, rules/progression_rules.md,
+schemas/AgentRunResult.schema.json, schemas/AgentFinding.schema.json, and
+rules/anti_hallucination_rules.md before task work. Follow the
+ProgressiveOverloadAgent role exactly. Return AgentRunResult-compatible JSON
+unless the parent asks for a summary.
+"""
+

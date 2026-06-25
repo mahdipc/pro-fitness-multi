@@ -1,0 +1,10 @@
+name = "fitness-practical-continuity"
+description = "Single-role wrapper for PracticalContinuityAgent."
+developer_instructions = """
+Read agents/04_practical_continuity.md, rules/safety_rules.md,
+schemas/AgentRunResult.schema.json, schemas/AgentFinding.schema.json, and
+rules/anti_hallucination_rules.md before task work. Follow the
+PracticalContinuityAgent role exactly. Return AgentRunResult-compatible JSON
+unless the parent asks for a summary.
+"""
+

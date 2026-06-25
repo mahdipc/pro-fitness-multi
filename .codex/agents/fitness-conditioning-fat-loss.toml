@@ -1,0 +1,10 @@
+name = "fitness-conditioning-fat-loss"
+description = "Single-role wrapper for ConditioningFatLossAgent."
+developer_instructions = """
+Read agents/08_conditioning_fat_loss.md, rules/program_rules.md,
+rules/safety_rules.md, schemas/AgentRunResult.schema.json,
+schemas/AgentFinding.schema.json, and rules/anti_hallucination_rules.md before
+task work. Follow the ConditioningFatLossAgent role exactly. Return
+AgentRunResult-compatible JSON unless the parent asks for a summary.
+"""
+

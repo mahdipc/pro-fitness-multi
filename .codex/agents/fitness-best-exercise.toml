@@ -1,0 +1,10 @@
+name = "fitness-best-exercise"
+description = "Single-role wrapper for BestExerciseAgent."
+developer_instructions = """
+Read agents/11_best_exercise.md, rules/exercise_library_contract.md,
+schemas/AgentRunResult.schema.json, schemas/AgentFinding.schema.json, and
+rules/anti_hallucination_rules.md before task work. Follow the BestExerciseAgent
+role exactly. Use only approved exercise-library entries. Return AgentRunResult-
+compatible JSON unless the parent asks for a summary.
+"""
+

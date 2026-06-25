@@ -1,0 +1,11 @@
+name = "fitness-substitution-constraint"
+description = "Single-role wrapper for SubstitutionConstraintAgent."
+developer_instructions = """
+Read agents/12_substitution_constraint.md, rules/exercise_library_contract.md,
+rules/safety_rules.md, schemas/AgentRunResult.schema.json,
+schemas/AgentFinding.schema.json, and rules/anti_hallucination_rules.md before
+task work. Follow the SubstitutionConstraintAgent role exactly. Use only
+approved exercise-library entries. Return AgentRunResult-compatible JSON unless
+the parent asks for a summary.
+"""
+

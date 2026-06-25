@@ -1,0 +1,10 @@
+name = "fitness-recovery-protector"
+description = "Single-role wrapper for RecoveryProtectorAgent."
+developer_instructions = """
+Read agents/10_recovery_protector.md, rules/program_rules.md,
+rules/safety_rules.md, schemas/AgentRunResult.schema.json,
+schemas/AgentFinding.schema.json, and rules/anti_hallucination_rules.md before
+task work. Follow the RecoveryProtectorAgent role exactly. Return
+AgentRunResult-compatible JSON unless the parent asks for a summary.
+"""
+
